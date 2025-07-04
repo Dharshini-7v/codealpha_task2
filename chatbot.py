@@ -1,5 +1,8 @@
 import json
 import nltk
+
+nltk.data.path.append("C:/Users/Dharshini/AppData/Roaming/nltk_data")
+
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
