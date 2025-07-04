@@ -1,31 +1,20 @@
-
-import nltk
-
-nltk.data.path.append("C:/Users/Dharshini/AppData/Roaming/nltk_data")
 import json
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
+import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Make sure these are downloaded once
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-
-lemmatizer = WordNetLemmatizer()
-stop_words = set(stopwords.words('english'))
-
-def preprocess(text):
-    tokens = word_tokenize(text.lower())
-    cleaned = [lemmatizer.lemmatize(word) for word in tokens if word.isalnum() and word not in stop_words]
-    return " ".join(cleaned)
+# Load spaCy model
+nlp = spacy.load("en_core_web_sm")
 
 def load_faqs():
     with open("faq_data.json", "r") as f:
         data = json.load(f)
     return data["faqs"]
+
+def preprocess(text):
+    doc = nlp(text.lower())
+    tokens = [token.lemma_ for token in doc if not token.is_stop and token.is_alpha]
+    return " ".join(tokens)
 
 def get_best_match(user_input):
     faqs = load_faqs()
@@ -40,9 +29,10 @@ def get_best_match(user_input):
 
     similarities = cosine_similarity(vectors[-1], vectors[:-1])
     best_match_index = similarities.argmax()
-    best_score = similarities[0, best_match_index]
+    score = similarities[0, best_match_index]
 
-    if best_score > 0.3:
+    if score > 0.3:
         return answers[best_match_index]
     else:
-        return "Sorry, I couldn't find a matching answer. Try rephrasing your question."
+        return "Sorry, I couldn’t find a match. Try rephrasing your question."
+
