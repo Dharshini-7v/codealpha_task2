@@ -25,7 +25,7 @@ def preprocess_text(text):
     return ' '.join(tokens)
 
 # --- Load and Preprocess FAQs ---
-def load_faqs(filepath='data/faqs.csv'):
+def load_faqs(filepath='faqs.csv'):
     try:
         df = pd.read_csv(filepath)
         df['processed_question'] = df['question'].apply(preprocess_text)
