@@ -1,6 +1,21 @@
 question,answer
-My laptop is not turning on,Ensure the power cable is connected and try a hard reset.
-The screen remains black after startup,Check if the display brightness is set low or try connecting to an external monitor.
-The keyboard is not working,Check if the keyboard is disabled in device settings or update the driver.
-My laptop is overheating,Make sure the air vents are not blocked and clean out dust.
-Wi-Fi is not connecting,Restart the router and update the network adapter driver.
+"My laptop is not turning on","Ensure the power cable is connected properly and try a hard reset by holding the power button for 10 seconds."
+"The screen remains black after startup","Check the brightness settings or connect to an external monitor to verify display issues."
+"The keyboard is not working","Check if the keyboard is disabled in device settings or try updating/reinstalling the keyboard driver."
+"My laptop is overheating","Clean dust from the vents and fans. Use a cooling pad if necessary."
+"Wi-Fi is not connecting","Restart your router and laptop. Make sure the network adapter driver is updated."
+"My touchpad is unresponsive","Press Fn + F7 (or your laptop's touchpad toggle key) and check touchpad settings."
+"The battery is not charging","Try a different charger or power outlet. Also, consider replacing the battery if it’s old."
+"Laptop is running very slow","Check for background apps, run a malware scan, and consider upgrading RAM or switching to SSD."
+"USB ports not working","Restart the laptop and update USB drivers from Device Manager."
+"Audio is not working","Ensure the audio is not muted and that the correct playback device is selected."
+"Laptop randomly shuts down","Check for overheating or failing hardware. Run a full hardware diagnostic."
+"Camera is not detected","Enable the camera in privacy settings and reinstall the webcam driver."
+"Bluetooth not connecting","Turn Bluetooth off and on. Remove and re-pair the device. Update Bluetooth drivers."
+"Cannot install software","Check for admin permissions, disk space, or conflicting software."
+"Laptop fan is too loud","Clean dust from fans and update BIOS if needed."
+"Cannot access the internet","Check network cables, restart modem/router, or use Windows network troubleshooter."
+"Display is flickering","Update your graphics driver and check refresh rate settings."
+"Laptop freezes frequently","Run antivirus scan and check for overheating or failing hardware."
+"Applications crash on startup","Update the app or reinstall it. Check for system compatibility."
+"The system time keeps changing","Replace the CMOS battery on the motherboard."
