@@ -6,19 +6,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import re
 
-# Download necessary NLTK data (run this once)
-try:
-    nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
-    nltk.download('stopwords')
-try:
-    nltk.data.find('corpora/wordnet')
-except nltk.downloader.DownloadError:
-    nltk.download('wordnet')
-try:
-    nltk.data.find('corpora/omw-1.4')
-except nltk.downloader.DownloadError:
-    nltk.download('omw-1.4') # Required for WordNetLemmatizer
+# Download necessary NLTK data (run this once
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # --- Text Preprocessing Functions ---
 lemmatizer = WordNetLemmatizer()
