@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Why is my laptop not turning on?",
+    "answer": "Ensure the charger is connected, the battery is not dead, and perform a hard reset by holding the power button for 10 seconds."
+  },
+  {
+    "question": "What should I do if my screen is blank?",
+    "answer": "Try connecting to an external monitor to check if the screen is the issue. Also, increase the brightness or reset the display settings."
+  },
+  {
+    "question": "Why is my laptop running slow?",
+    "answer": "Too many startup programs, low RAM, or malware could cause slowness. Clear temporary files and consider upgrading RAM."
+  },
+  {
+    "question": "How can I fix a frozen laptop?",
+    "answer": "Press Ctrl + Alt + Delete and use Task Manager to end unresponsive programs. Restart if the system remains frozen."
+  },
+  {
+    "question": "Why is my laptop overheating?",
+    "answer": "Clean the fan and vents, use a cooling pad, and avoid placing the laptop on soft surfaces like beds or pillows."
+  },
+  {
+    "question": "My laptop battery is not charging, what should I do?",
+    "answer": "Check the power adapter and charging port. Try a different charger and reset battery drivers via Device Manager."
+  },
+  {
+    "question": "How to fix Wi-Fi not connecting on my laptop?",
+    "answer": "Restart the router, ensure Airplane mode is off, update network drivers, or reset the network settings."
+  },
+  {
+    "question": "What should I do if my laptop has no sound?",
+    "answer": "Check volume settings, make sure it's not muted, and update the audio drivers from Device Manager."
+  },
+  {
+    "question": "How to remove a virus from my laptop?",
+    "answer": "Use antivirus software to scan and remove threats. Run Windows Defender Offline Scan for deeper cleanup."
+  },
+  {
+    "question": "Why is my laptop fan making loud noise?",
+    "answer": "It could be dust buildup or overuse. Clean the fan and close unnecessary programs to reduce load."
+  },
+  {
+    "question": "How to fix a blue screen error?",
+    "answer": "Check for recent driver updates or hardware changes. Run Windows Memory Diagnostic and check disk errors."
+  },
+  {
+    "question": "What to do if keyboard keys are not working?",
+    "answer": "Restart the laptop, check for physical damage, update keyboard drivers, or use an external keyboard for testing."
+  },
+  {
+    "question": "Why is my laptop not detecting USB devices?",
+    "answer": "Try a different port, update USB drivers, or restart the laptop. Check if the device works on another system."
+  },
+  {
+    "question": "How can I speed up my laptop's boot time?",
+    "answer": "Disable unnecessary startup programs and enable Fast Startup in power settings."
+  },
+  {
+    "question": "My laptop keeps restarting. What should I do?",
+    "answer": "Check for overheating, faulty RAM, or corrupted system files. Run `sfc /scannow` from Command Prompt."
+  },
+  {
+    "question": "Why won't my laptop connect to Bluetooth devices?",
+    "answer": "Ensure Bluetooth is enabled, update drivers, and remove then re-pair the device."
+  },
+  {
+    "question": "How to recover deleted files on a laptop?",
+    "answer": "Check the Recycle Bin first. Use recovery software like Recuva if files are permanently deleted."
+  },
+  {
+    "question": "What to do when applications crash frequently?",
+    "answer": "Update the application, check for OS updates, and monitor system resources for conflicts."
+  },
+  {
+    "question": "Why is my touchpad not working?",
+    "answer": "Check if it's disabled in settings or by a function key. Update or reinstall the touchpad drivers."
+  },
+  {
+    "question": "How can I reset my laptop to factory settings?",
+    "answer": "Go to Settings > Update & Security > Recovery > Reset this PC, and choose the option to remove everything."
+  }
+]
