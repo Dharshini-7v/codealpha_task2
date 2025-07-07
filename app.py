@@ -30,7 +30,6 @@ chatbot = FAQChatbot(faqs_df)
 with st.sidebar:
     st.title("ℹ️ About")
     st.markdown("This chatbot helps answer **laptop troubleshooting** questions.")
-    st.markdown("Built by **Dharshini V.** for CodeAlpha Internship 🌟")
 
 # --- Main App ---
 st.title("🤖 Laptop Troubleshooting Chatbot")
@@ -41,4 +40,3 @@ user_input = st.text_input("💬 Your Question")
 if user_input:
     response = chatbot.get_best_match(user_input)
     st.markdown(f"**🧠 Chatbot:** {response}")
-
