@@ -1,16 +1,44 @@
 import streamlit as st
 from chatbot import FAQChatbot, load_faqs
 
-st.set_page_config(page_title="Laptop FAQ Chatbot", page_icon="💻")
-st.title("💬 Laptop Troubleshooting FAQ Chatbot")
+# --- Page Config ---
+st.set_page_config(
+    page_title="💻 Laptop FAQ Chatbot",
+    page_icon="🤖",
+    layout="centered",
+)
 
-# Load data
+# --- Custom Styling ---
+st.markdown("""
+    <style>
+    .stTextInput>div>div>input {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+    .stMarkdown {
+        font-size: 18px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- Load Chatbot ---
 faqs_df = load_faqs("faqs.csv")
 chatbot = FAQChatbot(faqs_df)
 
-# Chat input
-user_question = st.text_input("Ask me a laptop troubleshooting question:")
+# --- Sidebar Info ---
+with st.sidebar:
+    st.title("ℹ️ About")
+    st.markdown("This chatbot helps answer **laptop troubleshooting** questions.")
+    st.markdown("Built by **Dharshini V.** for CodeAlpha Internship 🌟")
 
-if user_question:
-    response = chatbot.get_best_match(user_question)
-    st.markdown(f"**Chatbot:** {response}")
+# --- Main App ---
+st.title("🤖 Laptop Troubleshooting Chatbot")
+st.markdown("Ask your laptop issues like: *'Wi-Fi not working'*, *'Laptop overheating'*, *'Screen flickering'*, etc.")
+
+user_input = st.text_input("💬 Your Question")
+
+if user_input:
+    response = chatbot.get_best_match(user_input)
+    st.markdown(f"**🧠 Chatbot:** {response}")
+
