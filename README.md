@@ -25,18 +25,6 @@ It answers common **laptop troubleshooting** questions using **TF-IDF and cosine
 
 ---
 
-## 🗂️ Project Structure
-
-codealpha_task2/
-├── app.py # Streamlit UI
-├── chatbot.py # Core chatbot logic
-├── faqs.csv # List of FAQs (question, answer)
-├── requirements.txt # Dependencies
-└── README.md # This file
-
-
----
-
 ## ▶️ How to Run the App
 
 ### 1. Clone or download the project
